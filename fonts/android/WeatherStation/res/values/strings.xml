@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Weather Station</string>
+    <string name="textoTemperatura"/>
+    <string name="textoChuva"/>
+    <string name="textoChuvaAcumulada"/>
+    <string name="textoVento"/>
+    <string name="textoUmidade"/>
+    <string name="textoPercentual"/>
+    <string name="textoColeta"/>
+    <string name="umidade"/>
+    <string name="textoOrvalho"/>
+    <string name="moisture"/>
+    <string name="temperature"/>
+    <string name="chuva"/>
+    <string name="vento"/>
+    <string name="direcao"/>
+    <string name="chuvaAcumulada"/>
+    <string name="chuvaHoje"/>
+    <string name="chuvaAgora"/>
+    <string name="graus"/>
+    <string name="milimetros"/>
+    <string name="kilometros"/>
+    <string name="maxima"/>
+    <string name="minima"/>
+    <string name="textoMaxima"/>
+    <string name="textoMinima"/>
+    <string name="splash">Arduino Weather Station</string>
+    <string name="ambiente"/>
+    <string name="help">Ajuda</string>
+    <string name="ajuda">Weather Station\n\n	A tela principal do aplicativo exibe as informações sobre a temperatura atual, temperaturas máxima e mínima do dia, chuva acumulada do dia e o volume acumulado de três dias de chuva, além da velocidade e origem do vento, umidade relativa do ar e ponto de orvalho.\n\n	Ao atingir um nível crítico, a informação sobre o volume acumulado de chuva em três dias será exibida na cor vermelha, de modo a alertar o usuário sobre o perigo de um deslizamento de terra nas áreas de risco, com a simples observação da tela.\n\n	Para atualizar as informações, basta clicar sobre o logotipo da Weather Station na página principal.\n\n	Se não houver conexão de dados, serão exibidas as últimas informações gravadas na base de dados local coletadas durante a última leitura válida.</string>
+    <string name="about">Sobre</string>
+    <string name="sobre">Weather Station\n\n	Aplicativo desenvolvido para integração com o projeto Arduino Weather Station, como parte do sistema de monitoração de eventos hidrológicos potencialmente causadores de desastres.\n\n	Visa produzir alertas antecipados sobre a possibilidade de ocorrência de desastres naturais, possibilitando o controle dos efeitos negativos de eventos adversos sobre a população, os bens e serviços e o meio ambiente.\n\n	É também parte dos requisitos necessários para a obtenção do título de Tecnólogo em Informática com Ênfase em Banco de Dados da Fatec de São José dos Campos.\n\nDesenvolvedor: Jefferson Uchôas\nOrientador: Giuliano Bertoti\n\nFatec - São José dos Campos - 2013</string>
+    <string name="alertas">Weather Station\n\n	O sistema de alertas notifica o usuário quando o nível acumulado de chuvas de três dias ultrapassa a média histórica da região, gerando risco de deslizamento de encostas.\n\n O botão abaixo possibilita ao usuário desabilitar o sistema de alertas, entretanto é altamente aconselhável que permaneça ativo para que o usuário seja notificado sobre os riscos em tempo hábil.</string>
+    <string name="alerts">Alertas</string>
+
+</resources>

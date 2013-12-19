@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGray"
+    android:padding="4dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="2dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bt_atualizar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="2dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="2sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"            
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="2dip" >
+
+        <TextView
+            android:id="@+id/labelTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textoTemperatura"
+            android:textColor="@color/dimGray"
+            android:textSize="20sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"            
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="2dip"
+        android:baselineAligned="false">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelTemperature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperature"
+                    android:textColor="@color/dimGray"
+                    android:textSize="98sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+	                android:textSize="20sp"
+	                android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelGraus1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graus"
+                    android:textColor="@color/dimGray"
+                    android:textSize="20sp"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoMaxima"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelMaxima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maxima"
+                    android:textColor="@color/dimGray"
+                    android:textSize="30sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelGraus2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graus"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelMin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoMinima"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelMinima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minima"
+                    android:textColor="@color/dimGray"
+                    android:textSize="30sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelGraus3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graus"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:height="2dp" >
+
+        <TextView
+            android:id="@+id/labelVazio4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="2sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="2dip" >
+
+        <TextView
+            android:id="@+id/labelChuva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textoChuva"
+            android:textColor="@color/dimGray"
+            android:textSize="20sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"            
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="2dip"
+        android:baselineAligned="false">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelHoje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chuvaHoje"
+                    android:textColor="@color/dimGray"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelRain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chuva"
+                    android:textColor="@color/dimGray"
+                    android:textSize="56sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelMilimetros1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/milimetros"
+                    android:textColor="@color/dimGray"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelAgora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chuvaAgora"
+                    android:textColor="@color/dimGray"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelAcumulada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoChuvaAcumulada"
+                    android:textColor="@color/dimGray"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelRainSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chuvaAcumulada"
+                    android:textSize="56sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelMilimetros2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/milimetros"
+                    android:textColor="@color/dimGray"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:height="2dp" >
+
+        <TextView
+            android:id="@+id/labelVazio7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="2sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"            
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="2dip" >
+
+        <TextView
+            android:id="@+id/labelAmbiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ambiente"
+            android:textColor="@color/dimGray"
+            android:textSize="20sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="2dip"
+        android:baselineAligned="false">
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <TableRow
+                android:id="@+id/tableRow17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelVentoAgora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoVento"
+                    android:textColor="@color/dimGray"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelVento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vento"
+                    android:textColor="@color/dimGray"
+                    android:textSize="56sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelKilometros"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kilometros"
+                    android:textColor="@color/dimGray"
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="17sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelDirecao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/direcao"
+                    android:textColor="@color/dimGray"
+                    android:textSize="30sp"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TableRow
+                android:id="@+id/tableRow21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelUmidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoUmidade"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelHumidity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/umidade"
+                    android:textColor="@color/dimGray"
+                    android:textSize="30sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelPercentual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoPercentual"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelOrvalho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoOrvalho"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/labelMoisture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/moisture"
+                    android:textColor="@color/dimGray"
+                    android:textSize="30sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelVazio11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/labelGraus4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/graus"
+                    android:textColor="@color/dimGray"
+                    android:textSize="15sp"
+                    android:typeface="sans" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:height="2dp" >
+
+        <TextView
+            android:id="@+id/labelVazio12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="2sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="2dip" >
+        
+        <TextView
+            android:id="@+id/labelColeta"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/textoColeta"
+            android:textColor="@color/dimGray"
+            android:textSize="17sp"
+            android:typeface="sans" />
+    </LinearLayout>
+
+</LinearLayout>
